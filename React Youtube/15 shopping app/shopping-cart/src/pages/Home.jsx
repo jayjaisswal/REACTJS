@@ -23,11 +23,11 @@ function Home() {
     fetchProductData();
   }, []);
   return (
-    <div>
+    <div className="flex items-center justify-center w-full">
       {loading ? (
         <Spinner />
       ) : posts.length > 0 ? (
-       <div className="grid grid-cols-4 max-w-6xl p-1 mx-auto space-y-10 gap-x-5">
+       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 max-w-6xl p-1 mx-auto space-y-10 gap-x-5">
         {
            posts.map((post) => {
          

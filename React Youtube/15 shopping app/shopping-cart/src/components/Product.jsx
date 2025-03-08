@@ -19,7 +19,7 @@ function Product({ post }) {
   };
 
   return (
-    <div className="hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded">
+    <div className="flex flex-col justify-between items-center hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded hover:shadow-2xl">
       <div>
         <p className="text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1">
           {post.title}
